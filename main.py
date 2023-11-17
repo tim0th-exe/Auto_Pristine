@@ -175,7 +175,7 @@ class EnemyCarSelector(CarSelector):
             enemy_car = EnemyCar(random_owner_name, random_car.name, random_car.speed, random_car.durability,
                                  random_car.handling, random_ai)
 
-            # Apply AI effects to the enemy car
+            # Apply AI effects to the enemy car ### Not entirely sure if this in fact works?
             random_ai.apply_ai_effects(enemy_car)
 
             # Apply track demand effects to the enemy car
@@ -361,7 +361,7 @@ def apply_random_variability(car):
 def generate_enemy_cars(chosen_track):
     num_enemy_cars = random.randint(5, 9)
     enemy_car_selector = EnemyCarSelector()
-    enemy_cars = enemy_car_selector.generate_enemy_cars(num_enemy_cars, chosen_track)  # Pass the chosen_track
+    enemy_cars = enemy_car_selector.generate_enemy_cars(num_enemy_cars, chosen_track)
     slow_print("\nOpponents:")
     for i, enemy_car in enumerate(enemy_cars, start=1):
         slow_print(f"{i}. | Owner: {enemy_car.owner_name} | Car: {enemy_car.name} | AI: {enemy_car.ai.name}")
@@ -418,6 +418,7 @@ def main():
         if play_again != 'y':
             slow_print("Thank you for playing. Goodbye!")
             break
+
 
 if __name__ == "__main__":
     main()
