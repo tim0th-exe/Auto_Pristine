@@ -410,9 +410,11 @@ def main():
                 "In this city, cred only lasts so long. Dare to go again and assert your dominance among the elite?")
         else:
             slow_print(
-                "\nLooks like you shmucked out, kid. In this unforgiving city, defeat is just another curve in the track.")
+                "\nLooks like you shmucked out, kid. In this unforgiving city, defeat is just another curve "
+                "in the track.")
             slow_print(
-                "But remember, only the resilient thrive in AUTO PRISTINE. Dust off, recalibrate, and dare to reclaim your position among the best. The city awaits your comeback.")
+                "But remember, only the resilient thrive in AUTO PRISTINE. Dust off, recalibrate, "
+                "and dare to reclaim your position among the best. The city awaits your comeback.")
 
         play_again = input("\nDo you want to play again? (y/n): ").lower()
         if play_again != 'y':
