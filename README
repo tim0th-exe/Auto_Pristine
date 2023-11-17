@@ -1,4 +1,3 @@
-"""
 Welcome to my first game! This indescribably small game is built using oop, below I will detail the purpose
 of each class
 ------------------------------------------------------------------------------------------------------------------------
@@ -38,4 +37,3 @@ Functions and ap:
 There are several functions like print_welcome_messages, select_player_car, etc.
 The ap function orchestrates the game. It takes user input, initializes the game components, and runs the race.
 After the race, it asks the player if they want to play again.
-"""
