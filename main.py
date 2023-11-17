@@ -2,6 +2,9 @@
 Welcome to my first game! This indescribably small game is built using oop, below I will detail the purpose
 of each class
 ------------------------------------------------------------------------------------------------------------------------
+slow_print:
+a universally used print function to print text slowly in the terminal for readability and visual effect
+------------------------------------------------------------------------------------------------------------------------
 Car and EnemyCar Classes:
 There are two classes, Car and EnemyCar. EnemyCar is a subclass of Car.
 Both classes represent cars in a racing game and store information about their attributes like speed, durability,
@@ -457,7 +460,6 @@ def main():
         if play_again != 'y':
             slow_print("Thank you for playing. Goodbye!")
             break
-
 
 if __name__ == "__main__":
     main()
