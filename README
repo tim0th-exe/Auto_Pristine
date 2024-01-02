@@ -1,39 +1,32 @@
-Welcome to my first game! This indescribably small game is built using oop, below I will detail the purpose
-of each class
-------------------------------------------------------------------------------------------------------------------------
-slow_print:
-a universally used print function to print text slowly in the terminal for readability and visual effect
-------------------------------------------------------------------------------------------------------------------------
-Car and EnemyCar Classes:
-There are two classes, Car and EnemyCar. EnemyCar is a subclass of Car.
-Both classes represent cars in a racing game and store information about their attributes like speed, durability,
-handling, and an optional AI (artificial intelligence) system.
-------------------------------------------------------------------------------------------------------------------------
-AI Classes:
-There is a base class AI and three subclasses (AggressiveRiskyAI, DefensiveCruisingAI, PrecisionTechAI) representing
-different AI styles.
-These AI classes have a method apply_ai_effects that adjusts the car's attributes based on the AI style.
-------------------------------------------------------------------------------------------------------------------------
-CarSelector and AISelector Classes:
-CarSelector and AISelector classes help the player choose their car and AI, respectively.
-They display available options and take user input to make selections.
-------------------------------------------------------------------------------------------------------------------------
-EnemyCarSelector Class:
-A subclass of CarSelector specifically for selecting enemy cars. It generates random enemy cars with unique names, cars,
-and AIs.
-------------------------------------------------------------------------------------------------------------------------
-Track Class:
-Represents a racing track with attributes like surface, complexity, speed demand, etc.
-It has a method apply_demand_effects that adjusts a car's attributes based on the track's demands.
-------------------------------------------------------------------------------------------------------------------------
-TrackSelector Class:
-Helps the player choose a track for the race. It displays available tracks and takes user input.
-------------------------------------------------------------------------------------------------------------------------
-Race Class:
-Represents a race with a player's car, enemy cars, and a track.
-It calculates the time it takes for each car to finish the race based on their attributes and the track demands.
-------------------------------------------------------------------------------------------------------------------------
-Functions and ap:
-There are several functions like print_welcome_messages, select_player_car, etc.
-The ap function orchestrates the game. It takes user input, initializes the game components, and runs the race.
-After the race, it asks the player if they want to play again.
+# Auto Pristine - Cyberpunk Racing Game
+
+Welcome to **Auto Pristine**, a cyberpunk racing dystopia for the elite.
+
+## Quickstart Guide
+
+### 1. Clone the Repository
+
+Clone the Auto Pristine repository to your local machine:
+https://github.com/timothy-martian/Auto_Pristine.git
+
+### 2. Run the Game
+Ensure you have Python installed on your machine. Run the game using the following command: 
+python auto_pristine_game.py
+
+### 3. Enter Your Name
+Upon starting the game, enter your name when prompted.
+
+### 4. Choose Your Car
+Select a car from the available options, each with its unique characteristics and flavor.
+
+### 5. Choose Your AI
+Pick an AI driver to compete against, each with its own driving style.
+
+### 6. Choose a Track
+Select a race track to test your skills, each with different demands and challenges.
+
+### 7. Race!
+Experience the cyberpunk thrill as you race against opponents. The lap times will determine the winner.
+
+### 8. Play Again
+After the race, you'll have the option to play again. Enjoy the adrenaline of Auto Pristine!
